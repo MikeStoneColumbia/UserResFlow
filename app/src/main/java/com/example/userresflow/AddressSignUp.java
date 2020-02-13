@@ -81,7 +81,7 @@ public class AddressSignUp extends AppCompatActivity {
         i.putExtra("country",userCountry);
 
         startActivity(i);
-
+        finish();
     }
 
 }

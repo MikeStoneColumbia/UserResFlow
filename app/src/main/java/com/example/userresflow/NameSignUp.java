@@ -64,6 +64,7 @@ public class NameSignUp extends AppCompatActivity {
         i.putExtra("handleName", userHandle.getText().toString());
 
         startActivity(i);
+        finish();
 
     }
 

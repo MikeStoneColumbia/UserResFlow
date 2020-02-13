@@ -45,10 +45,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="90dp"
         android:text="Address:"
         android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+    <TextView
+        android:id="@+id/emailDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:text="Email Address: "
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressDisplay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
