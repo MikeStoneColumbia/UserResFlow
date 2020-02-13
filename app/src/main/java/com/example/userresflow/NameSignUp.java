@@ -14,6 +14,7 @@ public class NameSignUp extends AppCompatActivity {
     private EditText userFirstName;
     private EditText userLastName;
     private EditText userEmail;
+    private EditText userHandle;
     private Button onwards;
 
     @Override
@@ -24,7 +25,8 @@ public class NameSignUp extends AppCompatActivity {
         userFirstName = findViewById(R.id.userNameFirst);
         userLastName = findViewById(R.id.userNameLast);
         userEmail = findViewById(R.id.userEmail);
-        onwards = findViewById(R.id.onwardsBtn);
+        onwards = findViewById(R.id.onwardsBtnAdd);
+        userHandle = findViewById(R.id.userHandle);
 
         onwards.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,8 +35,9 @@ public class NameSignUp extends AppCompatActivity {
                 String firstNameStr = userFirstName.getText().toString();
                 String lastNameStr = userLastName.getText().toString();
                 String userEmailStr = userEmail.getText().toString();
+                String userHandleStr = userHandle.getText().toString();
 
-                if(firstNameStr.length() == 0 || lastNameStr.length() == 0 || userEmail.length() == 0){
+                if(firstNameStr.length() == 0 || lastNameStr.length() == 0 || userEmailStr.length() == 0 || userHandleStr.length() == 0){
 
                     Toast.makeText(getApplicationContext(), "Please make sure to fill in all fields", Toast.LENGTH_SHORT).show();
 
@@ -53,11 +56,12 @@ public class NameSignUp extends AppCompatActivity {
 
     public void goToExperience(){
 
-        Intent i  = new Intent(this,UserExperience.class);
+        Intent i  = new Intent(this, AddressSignUp.class);
 
         i.putExtra("firstName",userFirstName.getText().toString());
         i.putExtra("lastName",userLastName.getText().toString());
         i.putExtra("userEmail", userEmail.getText().toString());
+        i.putExtra("handleName", userHandle.getText().toString());
 
         startActivity(i);
 
