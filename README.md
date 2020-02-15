@@ -3,7 +3,7 @@ This is for the Tech LA Fellows. UserResFlow is the second prompt where a person
 In this version of the implementation I used Android Stduio and built an android app. Main language used was Java.
 In this doc I will go over the basic implementation and things that could be improved upon if more time was used to devlop.
 
-![GitHub Logo](splash screen.png)
+
 
 
 # Splash Screen
@@ -16,12 +16,18 @@ Some EditTexts to get The name, email, and whatever handle name the user comes u
 activity unless all fields are filled in, if user tries they will be greated with a Toast (screen notifcation) asking them to
 fill in remainding info. Info is then taken via backend and processed so that it can be displayed in another screen.
 
+![username screen](username.png)
+
 # Adresss Screen
 Similar concept from the Handle Screen, except this time we are collecting the user's address information. Same Toast behavior if a person doesn't
 complete all fields. (They don't need to fill in the adress line 2 it is optional.)
 
+![address screen](address.png)
+
 # Display Screen
 Displays to screen all user info that they inputed. It is meant to show off that we kept track of their data.
+
+![display screen](Display.png)
 
 # Improvements
 
