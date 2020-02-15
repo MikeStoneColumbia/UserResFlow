@@ -3,13 +3,12 @@ This is for the Tech LA Fellows. UserResFlow is the second prompt where a person
 In this version of the implementation I used Android Stduio and built an android app. Main language used was Java.
 In this doc I will go over the basic implementation and things that could be improved upon if more time was used to devlop.
 
-
-
-
 # Splash Screen
 
 A 4 second welcome screen just to make the user feel comfy. This will automatically take the person to the next activity screen
 which prompts them to input their name, email, and some handle name.
+
+![splashscreen](splashscreen.png)
 
 # Name Email Handle Screen
 Some EditTexts to get The name, email, and whatever handle name the user comes up with. Doesn't allow use to move onto the next
