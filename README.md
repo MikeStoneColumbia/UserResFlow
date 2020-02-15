@@ -3,6 +3,10 @@ This is for the Tech LA Fellows. UserResFlow is the second prompt where a person
 In this version of the implementation I used Android Stduio and built an android app. Main language used was Java.
 In this doc I will go over the basic implementation and things that could be improved upon if more time was used to devlop.
 
+Again please note this is made in android studio, so If you would like this code for yourself please make sure to run the projet in Android Studio.
+
+You can find the corresponding java files [here](https://github.com/MikeStoneColumbia/UserResFlow/tree/master/app/src/main/java/com/example/userresflow) and the res files [here](https://github.com/MikeStoneColumbia/UserResFlow/tree/master/app/src/main/res/layout).
+
 # Splash Screen
 
 A 4 second welcome screen just to make the user feel comfy. This will automatically take the person to the next activity screen
